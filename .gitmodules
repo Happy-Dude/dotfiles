@@ -114,6 +114,14 @@
 	path = vim/.vim/pack/plugged/opt/nerdcommenter
 	url = https://github.com/preservim/nerdcommenter.git
 	ignore = dirty
+[submodule "nvim-compe"]
+	path = vim/.vim/pack/plugged/opt/nvim-compe
+	url = https://github.com/hrsh7th/nvim-compe.git
+	ignore = dirty
+[submodule "nvim-lspconfig"]
+	path = vim/.vim/pack/plugged/opt/nvim-lspconfig
+	url = https://github.com/neovim/nvim-lspconfig.git
+	ignore = dirty
 [submodule "nvim-treesitter"]
 	path = vim/.vim/pack/plugged/opt/nvim-treesitter
 	url = https://github.com/nvim-treesitter/nvim-treesitter.git

@@ -135,18 +135,22 @@ if &loadplugins
   " { Neovim-only packages
   if has('nvim')
 
+    " nvim-lsp
+    Plug 'neovim/nvim-lspconfig'
+    Plug 'hrsh7th/nvim-compe'
+
     " nvim-treesitter
     Plug 'nvim-treesitter/nvim-treesitter'
     Plug 'nvim-treesitter/nvim-treesitter-refactor'
     Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
     " Enable coc.nvim if node.js is installed
-    if executable('node')
-      Plug 'neoclide/coc.nvim'                        ,   {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+    "if executable('node')
+    "  Plug 'neoclide/coc.nvim'                        ,   {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 
-      let s:coc_settings = s:vimpack_settings_dir . 'coc.vim'
-      execute 'source' s:coc_settings
-    endif
+    "  let s:coc_settings = s:vimpack_settings_dir . 'coc.vim'
+    "  execute 'source' s:coc_settings
+    "endif
 
   endif
   " }
