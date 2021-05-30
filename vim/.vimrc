@@ -288,6 +288,7 @@ execute                         'source' s:custom_functions
 """""""""""""""""""""""""""""""
 if has('nvim')
 lua <<EOF
+  require 'lsp'
   require 'treesitter'
 EOF
 endif
